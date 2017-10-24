@@ -3,7 +3,7 @@
 Environment: Ubuntu16.04  Nvidia GTX 1050  
 # Dependencies  
 ### General Dependencies
-`sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler`
+`sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler`  
 `sudo apt-get install --no-install-recommends libboost-all-dev`
 ### CUDA  
 ##### Graphics Card Driver
@@ -13,11 +13,11 @@ blacklist rivafb
 blacklist rivatv
 blacklist nvidiafb```
 `sudo apt-get  -purge remove nvidia-*`  
-Restart. And press `Ctrl + Alt + F1`
-`sudo /etc/init.d/lightdm  stop`  
+Restart. And press `Ctrl + Alt + F1`  
+`sudo /etc/init.d/lightdm  stop`   
 Run Nvidia Driver  
-`sudo sh NVIDIA-LINUX-X86_64-361.**.run -k $(uname -r)`
-In Terminal, `nvidia-smi' to test whether you have installed Nividia Driver Successfully.`  
+`sudo sh NVIDIA-LINUX-X86_64-361.**.run -k $(uname -r)`  
+In Terminal, `nvidia-smi' to test whether you have installed Nividia Driver Successfully.`   
 ##### Install CUDA  
 ```apt-get update
 dpkg -i CUDA-***-8.0.deb
