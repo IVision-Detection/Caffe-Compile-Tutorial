@@ -21,10 +21,12 @@ Run Nvidia Driver
 `sudo sh NVIDIA-LINUX-X86_64-361.**.run -k $(uname -r)`  
 In Terminal, `nvidia-smi' to test whether you have installed Nividia Driver Successfully.`   
 ##### Install CUDA  
-```apt-get update
+```
+apt-get update
 dpkg -i CUDA-***-8.0.deb
 apt-get update
-apt-get install cuda```  
+apt-get install cuda
+```  
 set PATH, `vim ~/.bashrc'  
 ```
 export CUDA_HOME=/usr/local/cuda-8.0
@@ -36,7 +38,7 @@ Restart XServer
 ```
 sudo /etc/init.d/lightdm  start
 ```
-In Terminal, `sudo /etc/init.d/lightdm  start`  
+In Terminal, `sudo /etc/init.d/lightdm  start`    
 PRIME Profiles -- Select the GPU you would like to use *NVIDIA*   
 And then install CUDA as the offical instructions.  
 ### BLAS  
