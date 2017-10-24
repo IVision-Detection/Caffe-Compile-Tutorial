@@ -19,7 +19,7 @@ Restart. And press `Ctrl + Alt + F1`
 `sudo /etc/init.d/lightdm  stop`   
 Run Nvidia Driver  
 `sudo sh NVIDIA-LINUX-X86_64-361.**.run -k $(uname -r)`  
-In Terminal, `nvidia-smi' to test whether you have installed Nividia Driver Successfully.`   
+In Terminal, `nvidia-smi` to test whether you have installed Nividia Driver Successfully.`   
 ##### Install CUDA  
 ```
 apt-get update
@@ -27,7 +27,7 @@ dpkg -i CUDA-***-8.0.deb
 apt-get update
 apt-get install cuda
 ```  
-set PATH, `vim ~/.bashrc'  
+set PATH, `vim ~/.bashrc`  
 ```
 export CUDA_HOME=/usr/local/cuda-8.0
 export LD_LIBRARY_PATH=${CUDA_HOME}/lib64
