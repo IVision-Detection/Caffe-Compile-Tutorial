@@ -7,11 +7,13 @@ Environment: Ubuntu16.04  Nvidia GTX 1050
 `sudo apt-get install --no-install-recommends libboost-all-dev`
 ### CUDA  
 ##### Graphics Card Driver
-```blacklist nouveau
+```
+blacklist nouveau
 blacklist vga16fb
 blacklist rivafb
 blacklist rivatv
-blacklist nvidiafb```
+blacklist nvidiafb
+```
 `sudo apt-get  -purge remove nvidia-*`  
 Restart. And press `Ctrl + Alt + F1`  
 `sudo /etc/init.d/lightdm  stop`   
